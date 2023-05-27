@@ -669,8 +669,6 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.contact-form-checkbox-wrapper {
-}
 
 .contact-form-input-item {
   margin-bottom: 8px;
@@ -808,7 +806,10 @@ img {
   opacity: 1;
 }
 
-.contact-form-checkbox:checked + .contact-form-own-checkbox {
+.contact-form-checkbox:checked
+  + .contact-form-own-wrapper
+  > .contakt-form-checkmarc-checkbox
+  > .contakt-form-checkmarc-icon {
   background-color: #404bbf;
   border-color: #404bbf;
   fill: #f4f4fd;
