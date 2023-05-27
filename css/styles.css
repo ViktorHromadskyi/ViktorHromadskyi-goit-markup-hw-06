@@ -798,21 +798,23 @@ img {
   height: 16px;
   border: 1px solid #2e2f42;
   border-radius: 2px;
+  margin-right: 8px;
+  cursor: pointer;
 }
 
 .contact-form-checkbox:checked
-  + .contact-form-own-checkbox
-  .contakt-form-checkmarc-icon {
-  opacity: 1;
-}
-
-.contact-form-checkbox:checked
-  + .contact-form-own-wrapper
-  > .contakt-form-checkmarc-checkbox
+  + .contact-form-checkbox-wrapper
+  > .contact-form-own-checkbox
   > .contakt-form-checkmarc-icon {
+  opacity: 1;
+  fill: #f4f4fd;
+}
+
+.contact-form-checkbox:checked
+  + .contact-form-checkbox-wrapper
+  > .contact-form-own-checkbox {
   background-color: #404bbf;
   border-color: #404bbf;
-  fill: #f4f4fd;
   border: none;
 }
 
