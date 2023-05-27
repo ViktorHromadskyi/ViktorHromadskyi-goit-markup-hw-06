@@ -702,7 +702,7 @@ img {
   width: 100%;
   height: 40px;
   padding-left: 38px;
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
@@ -796,7 +796,7 @@ img {
   justify-content: center;
   width: 16px;
   height: 16px;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
   cursor: pointer;
