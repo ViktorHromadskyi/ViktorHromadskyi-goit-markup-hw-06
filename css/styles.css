@@ -581,6 +581,7 @@ img {
 
 .subscribe-icon-send {
   margin-left: 16px;
+  fill: #ffffff;
 }
 
 .footer-subscribe-tex-btn {
@@ -753,6 +754,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .contact-form-message::placeholder {
   font-weight: 400;
