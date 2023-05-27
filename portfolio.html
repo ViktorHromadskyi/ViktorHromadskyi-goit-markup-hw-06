@@ -344,7 +344,6 @@
                 class="footer-contact-form-input"
                 type="email"
                 name="user-email"
-                required
                 placeholder="E-mail"
                 required
                 pattern="[a-zA-zа-яА-ЯіІїЇєЄыЫъЪгГ']+"
@@ -352,7 +351,12 @@
             </label>
             <button type="submit" class="subscribe-btn">
               <span class="footer-subscribe-tex-btn">Subscribe</span>
-              <svg class="subscribe-icon-send" width="24" height="24">
+              <svg
+                class="subscribe-icon-send"
+                aria-label="іконка відправити"
+                width="24"
+                height="24"
+              >
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
