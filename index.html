@@ -550,47 +550,51 @@
           </ul>
         </div>
         <div class="footer-subscribe-box">
-          <label>
-            <span class="subscribe-title">Subscribe</span>
-            <div class="subsceibe-email">
-            <input
-              class="footer-contact-form-input"
-              type="email"
-              name="user_email"
-              required
-              placeholder="E-mail"
-            />
-          </label>
-          <button type="submit" class="subscribe-btn">
-            <span class="footer-subscribe-tex-btn">Subscribe</span> 
-            <svg class="subscribe-icon-send" width="24" height="20">
-            <use href="./images/icons.svg#icon-send"></use>
-          </svg>
-          </button>
-          </div>
+          <p class="subscribe-title">Subscribe</p>
+          <form class="footer-email-form">
+            <label class="footer-label-email">
+              <input
+                class="footer-contact-form-input"
+                type="email"
+                name="user_email"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              <span class="footer-subscribe-tex-btn">Subscribe</span>
+              <svg class="subscribe-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Модалка -->
+
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
+        <p class="contact-form-title">
+          Leave your contacts and we will call you back
+        </p>
         <form class="contact-form">
-          <legend class="contact-form-title">
-            Leave your contacts and we will call you back
-          </legend>
-
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-field-desc">Name</span>
-            <span class="contact-form-input-wrapper">
+          <div class="contact-form-input-item">
+            <label for="user_name" class="contact-form-field-wrapper">
+              <span class="contact-form-field-desc">Name</span>
+            </label>
+            <div class="contact-form-input-wrapper">
               <input
                 class="contact-form-input"
+                id="user_name"
                 type="text"
-                name="user_first_name"
+                name="user_name"
                 required
                 pattern="[a-zA-zа-яА-ЯіІїЇєЄыЫъЪгГ']+"
               />
@@ -598,17 +602,18 @@
                 class="contact-form-input-icon"
                 aria-label="іконка користувача"
                 width="18"
-                height="18"
+                height="24"
               >
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
-            </span>
-          </label>
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-field-desc">Phone</span>
-            <span class="contact-form-input-wrapper">
+            </div>
+            <label class="contact-form-field-wrapper">
+              <span class="contact-form-field-desc">Phone</span>
+            </label>
+            <div class="contact-form-input-wrapper">
               <input
                 class="contact-form-input"
+                id="user_tel"
                 type="tel"
                 name="user_tel"
                 required
@@ -619,17 +624,18 @@
                 class="contact-form-input-icon"
                 aria-label="іконка телефону"
                 width="18"
-                height="18"
+                height="24"
               >
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-            </span>
-          </label>
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-field-desc">Email</span>
-            <span class="contact-form-input-wrapper">
+            </div>
+            <label class="contact-form-field-wrapper">
+              <span class="contact-form-field-desc">Email</span>
+            </label>
+            <div class="contact-form-input-wrapper">
               <input
                 class="contact-form-input"
+                id="user_email"
                 type="email"
                 name="user_email"
                 required
@@ -638,39 +644,46 @@
                 class="contact-form-input-icon"
                 aria-label="іконка Емейлу"
                 width="18"
-                height="18"
+                height="24"
               >
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-            </span>
-          </label>
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-field-desc">Comment</span>
-            <textarea
-              class="contact-form-message"
-              name="user_message"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <label class="contact-form-checkbox-wrapper">
-            <input
-              class="contact-form-checkbox"
-              type="checkbox"
-              name="user_policy"
-              required
-            />
-            <svg class="contact-form-own-checkbox" width="16" height="16">
-              <use
-                class="contakt-form-checkmarc-icon"
-                href="./images/icons.svg#icon-checkmark"
-              ></use>
-            </svg>
-            <legend class="privacy-policy-text">
-              I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
-            </legend>
-          </label>
-          <button type="submit" class="contact-form-submit">Send</button>
+            </div>
+            <div class="textarea-box">
+              <label for="user_comment" class="contact-form-field-wrapper">
+                <span class="contact-form-field-desc">Comment</span>
+              </label>
+              <textarea
+                class="contact-form-message"
+                id="user_comment"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <div class="textarea-item">
+              <input
+                class="contact-form-checkbox visually-hidden"
+                id="user_privacy"
+                type="checkbox"
+                name="user_privacy"
+                value="true"
+                required
+              />
+              <label for="user-privacy" class="contact-form-checkbox-wrapper">
+                <span class="contact-form-own-checkbox"
+                  ><svg class="checked-icon" width="10" height="8">
+                    <use
+                      class="contakt-form-checkmarc-icon"
+                      href="./images/icons.svg#icon-checkmark"
+                    ></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="#" class="privacy-policy">Privacy Policy</a>
+              </label>
+            </div>
+            <button type="submit" class="contact-form-submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
