@@ -807,13 +807,13 @@ img {
   > .contact-form-own-checkbox
   > .contakt-form-checkmarc-icon {
   opacity: 1;
+  border-color: #404bbf;
 }
 
 .contact-form-checkbox:checked
   + .contact-form-checkbox-wrapper
   > .contact-form-own-checkbox {
   background-color: #404bbf;
-  border-color: #404bbf;
   border: none;
   fill: #ffffff;
 }
