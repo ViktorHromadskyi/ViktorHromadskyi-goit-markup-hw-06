@@ -663,7 +663,7 @@ img {
 
 .contact-form-field-wrapper {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -696,6 +696,10 @@ img {
   color: #8e8f99;
 }
 
+.contact-form-box {
+  position: relative;
+}
+
 .contact-form-input {
   width: 100%;
   height: 40px;
@@ -705,6 +709,16 @@ img {
   background-color: transparent;
   outline: transparent;
   transition: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -720,20 +734,10 @@ img {
   fill: #4d5ae5;
 }
 
-.contact-form-input-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  transition: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .contact-form-input-wrapper {
   position: relative;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .contact-form-message {
@@ -749,12 +753,11 @@ img {
   outline: transparent;
   resize: none;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.2)
-  transition: border;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  transition: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .contact-form-message::placeholder {
   font-weight: 400;
@@ -785,7 +788,7 @@ img {
   margin-bottom: 16px;
 }
 
-.textarea-item{
+.textarea-item {
   margin-bottom: 24px;
 }
 
@@ -794,14 +797,13 @@ img {
   align-items: center;
   justify-content: center;
   width: 16px;
-  height: 16px; 
+  height: 16px;
   border: 1px solid #2e2f42;
   border-radius: 2px;
   fill: transparent;
 }
 
-.checked-icon{
-
+.checked-icon {
 }
 
 .contact-form-checkbox:checked
@@ -819,8 +821,8 @@ img {
   opacity: 0;
 }
 
-.privacy-policy{
-   color:#4d5ae5;
+.privacy-policy {
+  color: #4d5ae5;
 }
 
 .contact-form-submit {
