@@ -532,7 +532,6 @@ img {
   height: 40px;
   border-radius: 4px;
   padding-left: 16px;
-  margin-right: 24px;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -704,6 +703,10 @@ img {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
   transition: border-color;
@@ -721,14 +724,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-input:focus,
-.contact-form-input:hover {
+.contact-form-input:focus {
   outline: none;
   border: 1px solid #4d5ae5;
 }
 
-.contact-form-input:focus + .contact-form-input-icon,
-.contact-form-input:hover + .contact-form-input-icon {
+.contact-form-input:focus + .contact-form-input-icon {
   fill: #4d5ae5;
 }
 
@@ -765,8 +766,7 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.contact-form-message:focus,
-.contact-form-message:hover {
+.contact-form-message:focus {
   outline: none;
   border: 1px solid #4d5ae5;
 }
