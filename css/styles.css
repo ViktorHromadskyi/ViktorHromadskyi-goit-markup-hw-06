@@ -772,7 +772,7 @@ img {
 }
 
 .contact-form-checkbox-wrapper {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-bottom: 24px;
   font-weight: 400;
@@ -791,6 +791,7 @@ img {
 }
 
 .contact-form-own-checkbox {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
