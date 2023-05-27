@@ -800,10 +800,6 @@ img {
   height: 16px;
   border: 1px solid #2e2f42;
   border-radius: 2px;
-  fill: transparent;
-}
-
-.checked-icon {
 }
 
 .contact-form-checkbox:checked
@@ -814,7 +810,9 @@ img {
 
 .contact-form-checkbox:checked + .contact-form-own-checkbox {
   background-color: #404bbf;
+  border-color: #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
 
 .contakt-form-checkmarc-icon {

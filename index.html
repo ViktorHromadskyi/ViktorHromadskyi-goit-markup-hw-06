@@ -580,7 +580,7 @@
 
     <!-- Модалка -->
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -671,17 +671,17 @@
             ></textarea>
           </div>
           <div class="textarea-item">
-            <input
-              class="contact-form-checkbox visually-hidden"
-              id="user-privacy"
-              type="checkbox"
-              name="user-privacy"
-              value="true"
-              required
-            />
             <label for="user-privacy" class="contact-form-checkbox-wrapper">
-              <span class="contact-form-own-checkbox"
-                ><svg class="checked-icon" width="10" height="8">
+              <input
+                class="contact-form-checkbox visually-hidden"
+                id="user-privacy"
+                type="checkbox"
+                name="user-privacy"
+                value="true"
+                required
+              />
+              <span class="contact-form-own-checkbox">
+                <svg width="10" height="8">
                   <use
                     class="contakt-form-checkmarc-icon"
                     href="./images/icons.svg#icon-checkmark"
