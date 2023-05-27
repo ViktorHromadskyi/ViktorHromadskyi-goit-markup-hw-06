@@ -772,7 +772,7 @@ img {
 }
 
 .contact-form-checkbox-wrapper {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-bottom: 24px;
   font-weight: 400;
@@ -791,7 +791,6 @@ img {
 }
 
 .contact-form-own-checkbox {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -816,7 +815,7 @@ img {
   background-color: #404bbf;
   border-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: #ffffff;
 }
 
 .contakt-form-checkmarc-icon {
