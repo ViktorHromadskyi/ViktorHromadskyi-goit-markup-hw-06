@@ -772,7 +772,6 @@ img {
 }
 
 .contact-form-checkbox-wrapper {
-  display: flex;
   align-items: center;
   margin-bottom: 24px;
   font-weight: 400;
