@@ -800,6 +800,7 @@ img {
   border-radius: 2px;
   margin-right: 8px;
   cursor: pointer;
+  fill: transparent;
 }
 
 .contact-form-checkbox:checked
@@ -807,7 +808,6 @@ img {
   > .contact-form-own-checkbox
   > .contakt-form-checkmarc-icon {
   opacity: 1;
-  fill: #f4f4fd;
 }
 
 .contact-form-checkbox:checked
@@ -816,6 +816,7 @@ img {
   background-color: #404bbf;
   border-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 
 .contakt-form-checkmarc-icon {
